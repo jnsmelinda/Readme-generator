@@ -25,7 +25,7 @@ function promptUser() {
             type: "list",
             name: "license",
             message: "license?",
-            choices: ["mit", "abc", "grg"]
+            choices: ["MIT", "Apache License 2.0", "GNU GPLv3"]
         },
         {
             type: "input",

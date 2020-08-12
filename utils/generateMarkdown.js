@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${data.license}
+  This repository is protected under the [${data.license}](${getLicenseLink(data.license)})
 
   ## Contribution
   ${data.contributing}
@@ -32,6 +32,22 @@ function generateMarkdown(data) {
   ${data.questions}
 
 `;
+}
+
+function getLicenseLink(license) {
+    let link;
+    switch(license) {
+        case "MIT":
+            link = "https://choosealicense.com/licenses/mit/";
+            break;
+        case "Apache License 2.0":
+            link = "https://choosealicense.com/licenses/apache-2.0/";
+            break;
+        case "GNU GPLv3":
+            link = "https://choosealicense.com/licenses/gpl-3.0/";
+            break;
+    }
+    return link;
 }
 
 module.exports = generateMarkdown;
