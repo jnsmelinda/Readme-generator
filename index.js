@@ -37,7 +37,11 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "questions"
+            name: "github"
+        },
+        {
+            type: "input",
+            name: "email"
         }
     ]);
 }

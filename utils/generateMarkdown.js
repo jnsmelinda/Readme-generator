@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  This repository is protected under the [${data.license}](${getLicenseLink(data.license)})
+  This repository is protected under the [${data.license}](${getLicenseLink(data.license)}) license.
 
   ## Contribution
   ${data.contributing}
@@ -29,7 +29,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
+  [Github](https://github.com/${data.github})  
+  [Email](${data.email})
 
 `;
 }
