@@ -7,35 +7,37 @@ function promptUser() {
     return inquirer.prompt( [
         {
             type: "input",
-            name: "title",
+            name: "title"
         },
         {
             type: "input",
-            name: "description",
+            name: "description"
         },
         {
             type: "input",
-            name: "installation",
+            name: "installation"
         },
         {
             type: "input",
-            name: "usage",
+            name: "usage"
         },
         {
-            type: "input",
+            type: "list",
             name: "license",
+            message: "license?",
+            choices: ["mit", "abc", "grg"]
         },
         {
             type: "input",
-            name: "contributing",
+            name: "contributing"
         },
         {
             type: "input",
-            name: "tests",
+            name: "tests"
         },
         {
             type: "input",
-            name: "questions",
+            name: "questions"
         }
     ]);
 }
