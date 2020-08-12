@@ -7,41 +7,49 @@ function promptUser() {
     return inquirer.prompt( [
         {
             type: "input",
-            name: "title"
+            name: "title",
+            message: "Title:"
         },
         {
             type: "input",
-            name: "description"
+            name: "description",
+            message: "Description:"
         },
         {
             type: "input",
-            name: "installation"
+            name: "installation",
+            message: "Installation:"
         },
         {
             type: "input",
-            name: "usage"
+            name: "usage",
+            message: "Usage:"
         },
         {
             type: "list",
             name: "license",
-            message: "license?",
+            message: "License:",
             choices: ["MIT", "Apache License 2.0", "GNU GPLv3"]
         },
         {
             type: "input",
-            name: "contributing"
+            name: "contributing",
+            message: "Contributing:"
         },
         {
             type: "input",
-            name: "tests"
+            name: "tests",
+            message: "Tests:"
         },
         {
             type: "input",
-            name: "github"
+            name: "github",
+            message: "GitHub username:"
         },
         {
             type: "input",
-            name: "email"
+            name: "email",
+            message: "Email address:"
         }
     ]);
 }
