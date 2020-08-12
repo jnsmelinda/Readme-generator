@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // array of questions for user
@@ -13,10 +12,6 @@ function promptUser() {
         {
             type: "input",
             name: "description",
-        },
-        {
-            type: "input",
-            name: "tableOfContents",
         },
         {
             type: "input",
@@ -45,30 +40,26 @@ function promptUser() {
     ]);
 }
 
-
-
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err) {
-        if (err) {
-            console.log(err);
+    fs.writeFile(
+        fileName,
+        data,
+        (err) => {
+            if (err) throw err;
+            console.log(`${fileName} has been saved!`);
         }
-        console.log("succ2");
-    })
+    );
 }
 
 // function to initialize program
 async function init() {
     try {
         const answer = await promptUser();
-
         const md = generateMarkdown(answer);
-
         await writeToFile("test.md", md);
-
-        console.log("succ");
-
-    } catch (err) {
+    }
+    catch(err) {
         console.log(err);
     }
 }
