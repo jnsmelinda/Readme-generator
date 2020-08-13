@@ -1,6 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
+
+  ![License](https://img.shields.io/static/v1?label=license&message=${data.license.split(" ").join("+")}&color=green)
+
 
   ## Description
   ${data.description}
@@ -21,6 +25,8 @@ function generateMarkdown(data) {
 
   ## License
   This repository is protected under the [${data.license}](${getLicenseLink(data.license)}) license.
+  <br />
+  © 2020 Melinda Ivanov
 
   ## Contribution
   ${data.contributing}
@@ -29,7 +35,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  [Github](https://github.com/${data.github})  
+  [Github](https://github.com/${data.github})
   [Email](${data.email})
 
 `;
