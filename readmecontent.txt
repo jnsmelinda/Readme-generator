@@ -8,12 +8,12 @@ Installation:
 At first, you need to have node.js downloaded on the machine. Then you need to install the required modules: 'npm install inquirer'
 
 Usage:
-This application accepts user input from command line. The user is prompted for information about the application repository. Then a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. The user need to open the command line and type 'node index.js' and complete each sections. When the user enters the project title, it is displayed as the title of the README. When the user enters the description, installation instructions, usage information, contribution guidelines, and test instructions, these information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests. When the user chooses a license for the application from a list of options, a badge for that license is added to the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under. WHEN the user enters the GitHub username, it is added to the section of the README entitled Questions, with a link to the GitHub profile. When the user enters the email address it is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions. When the user clicks on the links in the Table of Contents the user is taken to the corresponding section of the README.
+The user need to open the command line and type 'node index.js' and complete each sections: project title, description, installation instructions, usage information, license, contribution guidelines, and test instructions. When the user enters the GitHub username and email, these are added to the section of the README entitled Questions, with a link to the GitHub profile. When the user clicks on the links in the Table of Contents the user is taken to the corresponding section of the README.
 
 License:
 
 Contributing:
-Please contribute to this project following the [CONTRIBUTOR COVENANT CODE OF CONDUCT]{CONTRIBUTOR COVENANT CODE OF CONDUCT}.
+Please contribute to this project following this guideline: [CONTRIBUTOR COVENANT CODE OF CONDUCT](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).
 
 Tests:
 GitHub: jnsmelinda
