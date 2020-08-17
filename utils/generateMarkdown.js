@@ -1,6 +1,7 @@
+/* eslint-disable max-len */
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `
+    return `
 # ${data.title}
 
 [![License](https://img.shields.io/static/v1?label=License&message=${data.license.split(" ").join("+")}&color=green)](${getLicenseLink(data.license)})
@@ -41,16 +42,16 @@ You can contact me about issues and suggestions in [Email](mailto:${data.email})
 
 function getLicenseLink(license) {
     let link;
-    switch(license) {
-        case "MIT":
-            link = "https://choosealicense.com/licenses/mit/";
-            break;
-        case "Apache License 2.0":
-            link = "https://choosealicense.com/licenses/apache-2.0/";
-            break;
-        case "GNU GPLv3":
-            link = "https://choosealicense.com/licenses/gpl-3.0/";
-            break;
+    switch (license) {
+    case "MIT":
+        link = "https://choosealicense.com/licenses/mit/";
+        break;
+    case "Apache License 2.0":
+        link = "https://choosealicense.com/licenses/apache-2.0/";
+        break;
+    case "GNU GPLv3":
+        link = "https://choosealicense.com/licenses/gpl-3.0/";
+        break;
     }
     return link;
 }

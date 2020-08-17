@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
