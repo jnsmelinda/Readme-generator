@@ -1,42 +1,41 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title}
+# ${data.title}
 
-  ![License](https://img.shields.io/static/v1?label=license&message=${data.license.split(" ").join("+")}&color=green)
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![License](https://img.shields.io/static/v1?label=License&message=${data.license.split(" ").join("+")}&color=green)](${getLicenseLink(data.license)})
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
 
-  ## Description
-  ${data.description}
+## Description
+${data.description}
 
-  ## Table of Contents
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [License](#License)
-  * [Contribution](#Contribution)
-  * [Tests](#Tests)
-  * [Questions](#Questions)
+## Table of Contents
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
-  ## Installation
-  ${data.installation}
+## Installation
+${data.installation}
 
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
 
-  ## License
-  This repository is protected under the [${data.license}](${getLicenseLink(data.license)}) license.
-  <br />
-  © 2020 Melinda Ivanov
+## License
+This repository is protected under the [${data.license}](${getLicenseLink(data.license)}) license.
+<br>
+© 2020 Melinda Ivanov
 
-  ## Contribution
-  ${data.contributing}
+## Contribution
+${data.contributing}
 
-  ## Tests
-  ${data.tests}
+## Tests
+${data.tests}
 
-  ## Questions
-  You can contact me about issues and suggestions in [Email](${data.email}) or open pull request with the suggestions on
-  [Github](https://github.com/${data.github}).
+## Questions
+You can contact me about issues and suggestions in [Email](${data.email}), you can also find me on [Github](https://github.com/${data.github}).
 `;
 }
 

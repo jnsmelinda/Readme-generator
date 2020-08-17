@@ -4,7 +4,7 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // array of questions for user
 function promptUser() {
-    return inquirer.prompt( [
+    return inquirer.prompt([
         {
             type: "input",
             name: "title",
@@ -69,9 +69,9 @@ function writeToFile(fileName, data) {
 // function to initialize program
 async function init() {
     try {
-        const answer = await promptUser();
-        const md = generateMarkdown(answer);
-        await writeToFile("test.md", md);
+        const userInput = await promptUser();
+        const content = generateMarkdown(userInput);
+        await writeToFile("README.md", content);
     }
     catch(err) {
         console.log(err);
