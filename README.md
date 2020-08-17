@@ -21,6 +21,9 @@ At first, you need to have [node.js](https://nodejs.org/) installed, then you ne
 ## Usage
 The user need to open the command-line, type `node index.js`, and enter input for each section: project title, description, installation instructions, usage information, license, contribution guidelines, test instructions, and contact information. When the user enters their GitHub username and email, these are added to the section of the README entitled Questions, with a link to the GitHub profile. When the user clicks on the links in the Table of Contents the user is taken to the corresponding section of the README.
 
+## Demo
+You can [watch the demo video](https://www.youtube.com/watch?v=S7RCAE3FxAM) or you can [download it](https://github.com/jnsmelinda/Readme-generator/raw/master/Readme-generator-demo.webm).
+
 ## License
 This repository is protected under the [MIT](https://choosealicense.com/licenses/mit/) license.
 <br>
