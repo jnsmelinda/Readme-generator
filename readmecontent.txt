@@ -10,12 +10,12 @@ At first, you need to have node.js downloaded on the machine. Then you need to i
 Usage:
 The user need to open the command line and type 'node index.js' and complete each sections: project title, description, installation instructions, usage information, license, contribution guidelines, and test instructions. When the user enters the GitHub username and email, these are added to the section of the README entitled Questions, with a link to the GitHub profile. When the user clicks on the links in the Table of Contents the user is taken to the corresponding section of the README.
 
-License:
-
 Contributing:
 Please contribute to this project following this guideline: [CONTRIBUTOR COVENANT CODE OF CONDUCT](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).
 
 Tests:
+
+
 GitHub: jnsmelinda
 Email: jns.melinda@gmail.com
 
