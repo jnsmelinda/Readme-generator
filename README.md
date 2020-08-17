@@ -24,6 +24,8 @@ The user need to open the command-line, type `node index.js`, and enter input fo
 ## Demo
 You can [watch the demo video](https://www.youtube.com/watch?v=S7RCAE3FxAM) or you can [download it](https://github.com/jnsmelinda/Readme-generator/raw/master/Readme-generator-demo.webm).
 
+![demo image](demo-img-1.png)
+
 ## License
 This repository is protected under the [MIT](https://choosealicense.com/licenses/mit/) license.
 <br>
