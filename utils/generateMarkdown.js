@@ -36,7 +36,7 @@ function generateMarkdown(data) {
 
   ## Questions
   You can contact me about issues and suggestions in [Email](${data.email}) or open pull request with the suggestions on
-  [Github](https://github.com/${data.github})
+  [Github](https://github.com/${data.github}).
 `;
 }
 
