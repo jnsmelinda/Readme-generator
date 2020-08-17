@@ -72,8 +72,7 @@ async function init() {
         const userInput = await promptUser();
         const content = generateMarkdown(userInput);
         await writeToFile("README.md", content);
-    }
-    catch(err) {
+    } catch (err) {
         console.log(err);
     }
 }
