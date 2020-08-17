@@ -35,7 +35,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-You can contact me about issues and suggestions in [Email](${data.email}), you can also find me on [Github](https://github.com/${data.github}).
+You can contact me about issues and suggestions in [Email](mailto:${data.email}), you can also find me on [Github](https://github.com/${data.github}).
 `;
 }
 

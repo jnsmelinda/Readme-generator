@@ -33,4 +33,4 @@ Please contribute to this project by opening a Pull Request and following the `e
 Run `node index.js`, enter your input and see the generated `README.md` (using a MarkDown preview application is recommended).
 
 ## Questions
-You can contact me about issues and suggestions in [Email](jns.melinda@gmail.com), you can also find me on [Github](https://github.com/jnsmelinda).
+You can contact me about issues and suggestions in [Email](mailto:jns.melinda@gmail.com), you can also find me on [Github](https://github.com/jnsmelinda).
